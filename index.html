@@ -20,45 +20,42 @@
                 не менее 2500 средних и малых проектов. Используя знания и накопленный опыт,
                 мы можем предложить...
             </p>
-            <button
-                id="tryForFreeButton"
+            <button id="tryForFreeButton"
                 class="blue-background white-text button-special-no-border rounded-edge-as-circle"
                 onclick="openForm();">
-                    Попробовать бесплатно
-                    <img src="./resources/images/arrow-top-right.png" class="rounded-edge-as-circle white-background">
+                Попробовать бесплатно
+                <img src="./resources/images/arrow-top-right.png" class="rounded-edge-as-circle white-background">
             </button>
         </div>
         <img src="./resources/images/computer.webp" class="image">
     </div>
 
     <div class="form-popup light-blue-background" id="loginForm">
-        <button
-            type="submit"
-            id="closeImageButton"
-            onclick="closeForm();">
-                <img
-                    src="./resources/images/exit.png"
-                    class="white-background super-rounded-edge"
-                    id="closeImage">
-        </button>
-        
+
+
         <form id="systemSignInForm" class="modalWindow light-blue-background">
+            <button type="submit" id="closeImageButton" class="white-background" onclick="closeForm();">
+                <img src="./resources/images/exit.png" class="white-background super-rounded-edge" id="closeImage">
+            </button>
+            
             <p class="label">Войти в систему</p>
+            
             <input type="text" id="emailOrPhone" class="super-rounded-edge" placeholder="Email/Телефон"><br>
             <input type="password" id="userPassword" class="super-rounded-edge" placeholder="Пароль"><br><br>
-                    
+
             <input id="rememberUser" class="rounded-edge" type="checkbox">
             <label for="rememberUser" id="rememberUserLabel">Запомнить пароль</label><br>
-                    
+
             <input id="recoverAccount" class="button-no-border blue-text transparent-background" type="submit"
                 value="Восстановить"><br>
-                    
-            <input id="signInButton" class="button white-text blue-background rounded-edge" type="submit"
-                value="Войти" onclick="onSignInFormData().then(alert);"><br>
-            <input id="createAccountButton" class="button blue-text transparent-background rounded-edge"
-                type="submit" value="Зарегистрироваться" onclick="onCreateAccountFormData().then(alert);">
+
+            <input id="signInButton" class="button white-text blue-background rounded-edge" type="submit" value="Войти"
+                onclick="onSignInFormData().then(alert);"><br>
+            <input id="createAccountButton" class="button blue-text transparent-background rounded-edge" type="submit"
+                value="Зарегистрироваться" onclick="onCreateAccountFormData().then(alert);">
         </form>
     </div>
 
 </body>
+
 </html>
