@@ -52,23 +52,19 @@ input[type="text"],  input[type="password"]{
     padding: 0;
 }
 
-button-special-no-border {
-    border: none;
-    text-align: left;
-    height: 3em;
-    font-size: 1em;
-    margin: 0;
-}
-
 .form-popup {
     display: none;
     border: none;
     z-index: 9;
 }
 
+.grey-text {
+    color: rgb(103, 99, 99);
+}
+
 .main-screen {
     width: 95%;
-    position: relative;
+    position: absolute;
     justify-content: center;
     align-items: center;
 }
@@ -91,10 +87,9 @@ button-special-no-border {
 }
 
 .rounded-edge {
-    text-align: center;
     border-radius: 18px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
 }
 
 .rounded-edge-as-circle {
@@ -125,7 +120,7 @@ button-special-no-border {
     position: absolute;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 #closeImage {
@@ -149,3 +144,20 @@ button-special-no-border {
     font-size: 1em;
     align-self: stretch;
 }
+
+#tryForFreeButton {
+    height: 4.5em !important;
+    width: fit-content !important;
+}
+
+#tryForFreeButtonText {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#tryForFreeButtonText img {
+    justify-self: flex-end;
+}
+

@@ -15,16 +15,16 @@
     <div class="main-screen" id="mainScreen">
         <div id="info">
             <h3 id="demoHeadline" class="blue-text">Демо-версия</h3>
-            <p id="demoParagraph">
+            <p id="demoParagraph" class="grey-text">
                 За 18 лет деятельности было реализовано 500 крупных, а также,
                 не менее 2500 средних и малых проектов. Используя знания и накопленный опыт,
                 мы можем предложить...
             </p>
-            <button id="tryForFreeButton"
-                class="blue-background white-text button-special-no-border rounded-edge-as-circle"
-                onclick="openForm();">
-                Попробовать бесплатно
-                <img src="./resources/images/arrow-top-right.png" class="rounded-edge-as-circle white-background">
+            <button id="tryForFreeButton" class="blue-background white-text button rounded-edge-as-circle"
+                value="Попробовать бесплатно" onclick="openForm();">
+                <div id="tryForFreeButtonText">Попробовать бесплатно&nbsp&nbsp&nbsp&nbsp
+                    <img src="./resources/images/arrow-top-right.png" class="rounded-edge-as-circle white-background">
+                </div>
             </button>
         </div>
         <img src="./resources/images/computer.webp" class="image">
@@ -37,9 +37,9 @@
             <button type="submit" id="closeImageButton" class="white-background" onclick="closeForm();">
                 <img src="./resources/images/exit.png" class="white-background super-rounded-edge" id="closeImage">
             </button>
-            
+
             <p class="label">Войти в систему</p>
-            
+
             <input type="text" id="emailOrPhone" class="super-rounded-edge" placeholder="Email/Телефон"><br>
             <input type="password" id="userPassword" class="super-rounded-edge" placeholder="Пароль"><br><br>
 
