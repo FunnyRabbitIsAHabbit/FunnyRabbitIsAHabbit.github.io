@@ -1,20 +1,30 @@
-@media(max-width: 325px) {
-
-}
-
 @media(min-width: 325px) {
-    
+    .main-screen div {
+        max-width: 300px;
+    }
 
 }
 
 @media(min-width: 768px) {
-    
+    .main-screen div {
+        max-width: 500px;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 @media(min-width: 1440px) {
-    
+    .main-screen div {
+        max-width: 500px;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
 }
 
 @media(min-width: 1920px) {
-    
+    .main-screen div {
+        max-width: 500px;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
 }
