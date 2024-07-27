@@ -1,9 +1,9 @@
 const openForm = () => {
-    document.getElementById("myForm").style.display = "flex";
+    document.getElementById("loginForm").style.display = "flex";
 }
 
 const closeForm = () => {
-    document.getElementById("myForm").style.display = "none";
+    document.getElementById("loginForm").style.display = "none";
 }
 
 const validateUsernameOnSignIn = async (username) => {
