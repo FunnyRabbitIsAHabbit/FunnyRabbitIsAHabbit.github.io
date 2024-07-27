@@ -29,9 +29,6 @@ html {
 
 .form-popup {
     display: none;
-    position: fixed;
-    bottom: 0;
-    right: 15px;
     border: none;
     z-index: 9;
 }
@@ -84,8 +81,14 @@ html {
     align-items: flex-end;
 }
 
+#closeImage {
+    width: 2em;
+    height: 2em;
+}
+
 #closeImageButton {
     position: relative;
+    align-self: flex-end;
     float: right;
     border: none;
     padding: 0;
