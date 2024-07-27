@@ -27,6 +27,15 @@ html {
     padding: 0;
 }
 
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: none;
+    z-index: 9;
+}
+
 .main-screen img {
     height: 3em;
     width: 3em;
