@@ -13,11 +13,46 @@
 <body>
 
     <div class="main-screen" id="mainScreen">
-        
+        <h3 id="demoHeadline" class="blue-text">Демо-версия</h3>
+        <p id="demoParagraph">
+            За 18 лет деятельности было реализовано 500 крупных, а также,
+            не менее 2500 средних и малых проектов. Используя знания и накопленный опыт,
+            мы можем предложить...
+        </p>
+        <button
+            id="tryForFreeButton"
+            class="rounded-edge-as-circle white-background"
+            onclick="openForm();">
+                Попробовать бесплатно<img src="./resources/images/arrow-top-right.png">
+        </button><br>
+        <img src="./resources/images/computer.webp" class="image">
     </div>
 
     <div class="form-popup light-blue-background" id="loginForm">
-
+        <button
+            type="submit"
+            id="closeImageButton"
+            class="modalClose white-background super-rounded-edge"
+            onclick="closeForm();">
+                <img src="./resources/images/exit.png">
+        </button>
+        
+        <form id="systemSignInForm" class="modalWindow light-blue-background">
+            <p class="label">Войти в систему</p>
+            <input type="text" id="emailOrPhone" class="super-rounded-edge" placeholder="Email/Телефон"><br>
+            <input type="password" id="userPassword" class="super-rounded-edge" placeholder="Пароль"><br><br>
+                    
+            <input id="rememberUser" class="rounded-edge" type="checkbox">
+            <label for="rememberUser" id="rememberUserLabel">Запомнить пароль</label><br>
+                    
+            <input id="recoverAccount" class="button-no-border blue-text transparent-background" type="submit"
+                value="Восстановить"><br>
+                    
+            <input id="signInButton" class="button white-text blue-background rounded-edge" type="submit"
+                value="Войти" onclick="onSignInFormData().then(alert);"><br>
+            <input id="createAccountButton" class="button blue-text transparent-background rounded-edge"
+                type="submit" value="Зарегистрироваться" onclick="onCreateAccountFormData().then(alert);">
+        </form>
     </div>
 
 </body>

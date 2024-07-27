@@ -11,6 +11,27 @@ html {
     color: rgb(36, 76, 152);
 }
 
+.button {
+    height: 3em;
+    border: 0.5px solid rgb(36, 76, 152);
+    margin: 0.5px;
+    width: 100%;
+}
+
+.button-no-border {
+    border: none;
+    text-align: left;
+    height: 3em;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.main-screen img {
+    height: 3em;
+    width: 3em;
+}
+
 .light-blue-background {
     background-color: rgb(204, 214, 233);
 }
@@ -45,4 +66,11 @@ html {
 
 .white-text {
     color: white;
+}
+
+#myForm {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 }
