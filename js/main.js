@@ -23,11 +23,10 @@ const validatePasswordOnCreateAccount = async (password) => {
 }
 
 const getUserAndPassword = async () => {
-    const form = document.getElementById("systemSignInForm");
-    const user = form.getElementById("emailOrPhone").value;
-    const password = form.getElementById("userPassword").value;
+    const user = document.getElementById("emailOrPhone").value;
+    const password = document.getElementById("userPassword").value;
 
-    return user, password;
+    return [user, password];
 }
 
 const onSignInFormData = async () => {
