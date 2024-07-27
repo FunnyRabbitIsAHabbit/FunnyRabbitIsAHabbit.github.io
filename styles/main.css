@@ -3,9 +3,18 @@
     padding-left: 10px;
 }
 
+body {
+    margin: 2.1em;
+    padding: 2.5%;
+    background-color: rgb(240, 244, 252);
+    border-radius: 25px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
 html {
     font-family: Arial, sans-serif;
-    background-color: rgb(240, 244, 252);
+    background-color: white;
 }
 
 input[type="submit"] {
@@ -67,14 +76,8 @@ input[type="text"],  input[type="password"]{
     position: absolute;
     justify-content: center;
     align-items: center;
-}
 
-.main-screen .info {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    flex-wrap: wrap;
 }
 
 .main-screen img:not([class="image"]) {
@@ -116,13 +119,6 @@ input[type="text"],  input[type="password"]{
     color: white;
 }
 
-#myForm {
-    position: absolute;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
 #closeImage {
     width: 2em;
     height: 2em;
@@ -137,6 +133,13 @@ input[type="text"],  input[type="password"]{
     margin: 0 0 0 1em;
     height: 3em;
     width: 3em;
+}
+
+#loginForm {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 #rememberUser, #rememberUserLabel {
