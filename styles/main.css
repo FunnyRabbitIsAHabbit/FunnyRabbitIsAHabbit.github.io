@@ -63,6 +63,9 @@ input[type="text"],  input[type="password"]{
 
 .form-popup {
     display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
     border: none;
     z-index: 9;
 }
@@ -72,12 +75,15 @@ input[type="text"],  input[type="password"]{
 }
 
 .main-screen {
-    width: 95%;
-    position: absolute;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
-    flex-wrap: wrap;
+    top: 10%;
+    left: 5%;
+    padding: 0%;
 }
 
 .main-screen img:not([class="image"]) {
