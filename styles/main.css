@@ -1,6 +1,31 @@
+::placeholder {
+    color: rgb(36, 76, 152);
+    padding-left: 10px;
+}
+
 html {
     font-family: Arial, sans-serif;
     background-color: rgb(240, 244, 252);
+}
+
+input[type="submit"] {
+    width: 100%;
+    margin: 1px;
+}
+
+input[type="checkbox"] {
+    border: none;
+    outline: 1px solid black;
+    margin-left: 4px;
+}
+
+input[type="text"],  input[type="password"]{
+    border: none;
+    height: 2em;
+    font-size: 1em;
+    background-color: rgb(204, 214, 233);
+    width: 100%;
+    margin: 1px;
 }
 
 .blue-background {
@@ -27,19 +52,42 @@ html {
     padding: 0;
 }
 
+button-special-no-border {
+    border: none;
+    text-align: left;
+    height: 3em;
+    font-size: 1em;
+    margin: 0;
+}
+
 .form-popup {
     display: none;
     border: none;
     z-index: 9;
 }
 
-.main-screen img {
+.main-screen {
+    width: 95%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-screen .info {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-screen img:not([class="image"]) {
     height: 3em;
     width: 3em;
 }
 
 .light-blue-background {
-    background-color: rgb(204, 214, 233);
+    background-color: rgb(240, 244, 252);
 }
 
 .rounded-edge {
@@ -50,7 +98,6 @@ html {
 }
 
 .rounded-edge-as-circle {
-    text-align: center;
     border-radius: 18px;
     -moz-border-radius: 360px;
     -webkit-border-radius: 360px;
@@ -95,4 +142,10 @@ html {
     margin: 0 0 0 1em;
     height: 3em;
     width: 3em;
+}
+
+#rememberUser, #rememberUserLabel {
+    display: inline;
+    font-size: 1em;
+    align-self: stretch;
 }
