@@ -1,0 +1,16 @@
+html {
+    font-family: Arial, sans-serif;
+    background-color: rgb(240, 244, 252);
+}
+
+.blue-background {
+    background-color: rgb(36, 76, 152);
+}
+
+.blue-text {
+    color: rgb(36, 76, 152);
+}
+
+.light-blue-background {
+    background-color: rgb(204, 214, 233);
+}
