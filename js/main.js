@@ -39,9 +39,9 @@ const onSignInFormData = async () => {
     const valid = await validateUsernameOnSignIn(user) && await validatePasswordOnSignIn(user, password);
 
     if (valid) {
-        let toReturn = "Signed in as @user=" + user + " with @pass-d=" + password;
+        let toReturn = "Signed in as @user=`" + user + "` with @pass-d=`" + password +"`";
         if (isRememberUser) {toReturn += userRemembered}
-        return toReturn
+        return toReturn;
     }
     else {
         return "Not signed in";
@@ -50,11 +50,12 @@ const onSignInFormData = async () => {
 
 const onCreateAccountFormData = async () => {
     const [user, password, isRememberUser] = await getUserAndPassword();
-    const valid = await validateUsernameOnCreateAccount(user) && await validatePasswordOnCreateAccount(password);
+    const valid = await validateUsernameOnCreateAccount(user) && 
+    await validatePasswordOnCreateAccount(password);
 
 
     if (valid) {
-        let toReturn = "Created account @user=" + user + " with @pass-d=" + password
+        let toReturn = "Created account @user=`" + user + "` with @pass-d=`" + password + "`";
         if (isRememberUser) {toReturn += userRemembered}
         return toReturn;
     }
