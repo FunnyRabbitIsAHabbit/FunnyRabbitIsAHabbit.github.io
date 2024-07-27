@@ -83,3 +83,13 @@ html {
     justify-content: center;
     align-items: flex-end;
 }
+
+#closeImageButton {
+    position: relative;
+    float: right;
+    border: none;
+    padding: 0;
+    margin: 0 0 0 1em;
+    height: 3em;
+    width: 3em;
+}
