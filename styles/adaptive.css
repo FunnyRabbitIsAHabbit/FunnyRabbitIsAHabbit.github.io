@@ -1,4 +1,12 @@
 @media(max-width: 375px) {
+    .form-popup {
+        top: 25%;
+        left: 50%;
+        width: 50%;
+        height: 50%;
+        margin-left: -25%;
+    }
+
     .main-screen {
         flex-direction: column;
     }
@@ -14,6 +22,11 @@
 }
 
 @media(min-width: 375px) {
+    .form-popup {
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .main-screen {
         flex-direction: column;
     }
